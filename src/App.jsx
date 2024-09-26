@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import { useAuthStore } from "./store/authUser";
 import { Loader } from "lucide-react";
 import WatchPage from "./pages/WatchPage";
+import SearchPage from "./pages/SearchPage";
 
 function App() {
   const { user, isCheckingAuth, authCheck } = useAuthStore();
@@ -42,6 +43,10 @@ function App() {
         <Route
           path="/watch/:id"
           element={user ? <WatchPage /> : <Navigate to={"/login"} />}
+        />
+        <Route
+          path="/search"
+          element={user ? <SearchPage /> : <Navigate to={"/login"} />}
         />
         <Route path="*" element={<h1>404</h1>} />
       </Routes>
