@@ -15,9 +15,6 @@ const HomeScreen = () => {
   const { trendingContent } = useGetTrendingContent();
 
   const { contentType } = useContentStore();
-  console.log(trendingContent, "trending content");
-
-  console.log(MOVIE_CATEGORIES, typeof MOVIE_CATEGORIES);
 
   if (!trendingContent) {
     return (
@@ -32,6 +29,7 @@ const HomeScreen = () => {
     <>
       <div className="relative h-screen text-white">
         <Navbar />
+        {/* cool optimization for image */}
         {imgLoading && (
           <div className="absolute top-0 left-0 w-full h-full bg-black/70 flex items-center justify-center -z-10 shimmer" />
         )}
