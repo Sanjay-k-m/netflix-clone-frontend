@@ -11,8 +11,6 @@ const Navbar = () => {
   const { user, logout } = useAuthStore();
   const { setContentType } = useContentStore();
 
-
-
   return (
     <header className="max-w-6xl mx-auto flex items-center justify-between p-4 flex-wrap p-4 h-20">
       <div className="flex items-center gap-10 z-50">
@@ -25,10 +23,18 @@ const Navbar = () => {
         </Link>
         {/* desktop Navbar items */}
         <div className="hidden sm:flex gap-2 items-center">
-          <Link to={"/"} className="hover:underline" onClick={() => setContentType("movie")}>
+          <Link
+            to={"/"}
+            className="hover:underline"
+            onClick={() => setContentType("movie")}
+          >
             Movies
           </Link>
-          <Link to={"/"} className="hover:underline" onClick={() => setContentType("tv")}>
+          <Link
+            to={"/"}
+            className="hover:underline"
+            onClick={() => setContentType("tv")}
+          >
             TV Shows
           </Link>
 
@@ -57,14 +63,20 @@ const Navbar = () => {
           <Link
             to={"/"}
             className="block p-2 hover:underline"
-            onClick={toggleMobileMenu}
+            onClick={() => {
+              toggleMobileMenu();
+              setContentType("movie");
+            }}
           >
             Movies
           </Link>
           <Link
             to={"/"}
             className="block p-2 hover:underline"
-            onClick={toggleMobileMenu}
+            onClick={() => {
+              toggleMobileMenu();
+              setContentType("tv");
+            }}
           >
             TV Shows
           </Link>
