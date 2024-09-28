@@ -52,7 +52,7 @@ This repository contains the frontend for a Netflix Clone built with React and s
 
     Add your API URL:
     ```
-    REACT_APP_API_URL=http://localhost:5000
+    VITE_APP_API_URL=http://localhost:5000
     ```
 
 4. Run the app:
@@ -60,7 +60,7 @@ This repository contains the frontend for a Netflix Clone built with React and s
     npm run dev
     ```
 
-5. Visit [http://localhost:3000](http://localhost:3000) to view the app.
+5. Visit [http://localhost:5173 ](http://localhost:5173 ) to view the app.
 
 ## <span style="font-size: 28px;">🛠</span> Available Scripts
 
