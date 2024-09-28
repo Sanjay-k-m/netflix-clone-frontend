@@ -85,7 +85,7 @@ This project is created for educational purposes to demonstrate full-stack devel
 
 ## <span style="font-size: 28px;">🎥</span> Acknowledgments
 
-This project was created by referring to the tutorial provided by Asa Programmer on YouTube. Special thanks for the guidance and valuable insights into building a Netflix clone using the MERN stack.
+This project was created by referring to the tutorial provided by [Asa Programmer](https://www.youtube.com/@asaprogrammer_) on YouTube. Special thanks for the guidance and valuable insights into building a Netflix clone using the MERN stack.
 
 ## <span style="font-size: 28px;">🤝</span> Contributing
 
